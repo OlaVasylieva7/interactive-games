@@ -1,0 +1,19 @@
+main {
+  background-image: url('/img/main-background-image.png');
+  background-size: cover;
+  background-color: #eee;
+  /* height: 3500px; */
+}
+
+.container {
+  width: 1090px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+h1 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
