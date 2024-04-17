@@ -20,18 +20,68 @@
     />
     
     <script type="module" crossorigin src="/interactive-games/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-91d87aa9.css">
+    <link rel="stylesheet" href="/interactive-games/assets/index-443c08aa.css">
   </head>
   <body>
-    <!-- <section>
-  <p>
-    Привіт! <br />
-    Ви потрапили на сайт інтерактивних ігор та завдань <br />
-    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
-    Бажаємо Вам гарно провести час!
-  </p>
-</section>
- -->
+    <!-- <button class="button" data-action="open-modal">Відкрити модалку</button> -->
+
+<div class="backdrop js-backdrop">
+  <div class="modal">
+    <p class="modal__text backdown">
+      Привіт! <br />
+      Ви потрапили на сайт інтерактивних ігор та завдань <br />
+      Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
+      Бажаємо Вам гарно провести час!
+    </p>
+
+    <div class="modal__subcontainer">
+      <p class="modal__text">Введіть своє ім’я:</p>
+
+      <input
+        type="text"
+        class="modal__input"
+        placeholder="Ваше ім’я...           "
+      />
+      <button class="modal__save-btn">Зберегти</button>
+    </div>
+
+    <ul class="modal__list">
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-1"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFDSURBVHgB5dO7SgNBGAXgI9hotY/wCzYpvDxMsBN8Agu10SpgZSWohaWksNIHkAjiM1ho51qpoL3Y6BnyDxkHJ7tJ/t2Q5MCBvbEfcwNmLXOwj7BbiXcXbO4u5mGP3rHf7GvwfI3N9LoF4wj7zN6yi8HzffaH/RoHuovuTLRgGEmgOwEKa1hKoqawKNopgS6wTxawoPxIHXqv3wtGiAyIdiYKXWGbERqvaXhkzNAP/ekxis+pCSqKnrHb+vNH1LCR3GhzhRHge33QDEa7N4VfJ1CT3euzqUiM3wTfmB0Zn3X2nb3E35EfoDft5mhD0VO99zs8xh+qRBHhRxF+CIOkUJ82/l/zJipET9g3dgO9aXff5uwyhkymaLsAbej9kuI5ukswUtwIPtnVAtRHLNAQfwnw8wRaSTx+VSca4rWjPhmmMb9UpIfuoi45egAAAABJRU5ErkJggg=="
+          alt="sword"
+        />
+      </li>
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-2"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIGSURBVHgB5ZbLK6VhHMe/5tosDDO7qZnpbKe5NremZhZmGpRSkqIsiMjKgq1yFsrWf0DKgoUdpYQNyi0i2TkSSRJCLoXvz/OcvD2el/M8x61869M553d+7/md93d7H+BqlUUGyBYZIfm4ARWTeZJBXpIC/TkT16xZ8t+wZZAhXLOOLbaUEDsewU/vyB/Dtk1+k8GA7QPZJxWG77pv4EKSSyYDtg6yZPg9JG3kl2Evg6eiGl8dP8At6c4FfkEaoeZwijSTdMPnM6klOUhMcn0VqbwocB95Rv6RErIAtZHi/sv6z70lDWRafw5TNVQjfid/yaLNKY/0WOz9UCvRpiaorNgU0YEiQaPtjj+ScYt9mPyEXVKWvJDvikgviQWNMscyU8H6ydA/t/zAN7JBagx7J9kjTxGuTdMgAz5B5kiaRjaQbJ8xw/e1fk0LIKlPJV/1de3nY55mVTIipdiJG+O7NAVuKoVqvFfkE9mFappYiH8dKSetUFnO9p3jCHkDNWrS1V8uCArtk62DSkwpm/3pcYmiuKWVmY4k5RpYGkzGqgRJyrW5WqBqKWcq6dQD+OmJa+BVqC5egX3WE9W+60HgMTnU77eQhFxrPIrzm8tLrqmOQD0sZKvNkPekG6r2TnK94xj5Qbqg1m0qjKdOovI57K3h7A6j8NT9O3NJqo/gt6/jqoeHTgBVDF6oEnng7QAAAABJRU5ErkJggg=="
+          alt="puzzle"
+        />
+      </li>
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-3"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGoSURBVHgB1Zc/SwMxGMYfi6BUkFp11Ip+BudWcHVz191BnUUFv0DxE2hXB3FwEQed3BURdJG6Wql/UBehPi/3HhfTnjZtIvSBH3eX5L0naZL3GiDSGqmTRmAeyKYY9unNjnbgCe1r1DFGvPJ6vw7thfSmCDdJzDvcVNS4evyCGtzViTHUq9FvvMSHxsgKmSUZckD20xqL6SPcZY94ityjeUFVrLialnszrmjZKVkgy0ZHlkIZDxrPk0abRS0/tI0z8KMhvX4i2iWmiShvB/gylr18gWhvb2tZjmzo/XGrIF9zXEKyoOpIMqHMc8Fo531xiebJrdZ9IVpoBatNEONYwySbUvcjgfjW618NJHH7ylpOMkf8ATdlu4wLMse/yWsCcVaascx9zngeQJKdghrvkTtEnzfZhzfk2upMEONLMk5OyBmZJm/kGR6Vtrh2kaTAKzRnoCCLS0zmjOcJMgLPajXiIyQjLSNJ/Dkrruv/XLbO9bpKquSFzOCf5riduN5LIKL4g12EmzoZcUnjqpKh5NxU1oqQRxgzZisukPNTfJQJify6MlB8A/8IxDUwX5uVAAAAAElFTkSuQmCC"
+          alt="tic tac toe"
+        />
+      </li>
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-4"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJYSURBVHgBxZc7aBRRFIb/xIg2oo2FNkZEBRGNj0QR0dpOQXygqDHYWChqpYKxsrVTGzFiYSOKCKKNEUFQNORBSMj7SZ6QFEkXSPIf7ln2zM3M7Mwkm/zwsec+Zv6dc+89OwsA5aSeLBSJZvUIqJR8Ij9ISZH4SN4gRAv62UmqyWXSrX2t2k6ji+Zp+z2PUONiaolHWdTAamhNnrgUa6QkxlXkr9e3g/Ro3ECOIYPiUn2S9JFDXv9d5I/IYTJQwDzVrj4VYQrtLzftygLmiY2rYkyvk98h/Ufgzm1lEo+oNZ7Tz40hY7fJy5D+9Wowh4SKSrWs3TA5avr2wGXC13Htr0AKj7jN5ZvXkVvenAo1PRFzn0wlU0ybNZYjtM0bH0T0ky7LeCW0IpVrE3lMRvSGveQZ8nU/py2klkxoW+Y9yg2WIZ3ki/4iY+QM3BLsJQ/JP/LZzD1LGuGKUKfOE+P/cJsxVaqfkPemfcXEr9ToKelA8Mf/gom/wWUilXETghvJXrtPjUXfEaxsXSaWzTriX1xI82QduYTge9XViPnXjGkbOQ/zhdMYy9xdXjuJ2k28O6vxa9O+aWLJQovGssbVZqzGxHXIaCwvgC+QTe/gTkImYznH57z+rwh/p37uzZM13qxjmMbSMhhn7OsGXIrDakI98hsqcB954b5H7pC3KCw5fyWmLbFUpD9w6+rrINzxO0BmrLFUIklHDZJpFq4U5vSADEWYiuTcj5P7WKYkdbUanyZTCPlf5GknGSX7yQa4yvYBKbWdfIFb60m4epxEMq9Pr/tJti4C4CKzIKNhW/4AAAAASUVORK5CYII="
+          alt="game-development"
+        />
+      </li>
+    </ul>
+
+    <!-- <button type="button" class="button" data-action="close-modal">
+      Закрити
+    </button> -->
+  </div>
+</div>
+
     <header class="header">
   <nav class="nav">
     <div class="container">
