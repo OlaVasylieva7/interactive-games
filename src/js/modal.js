@@ -1,4 +1,3 @@
-// const openModalBtn = document.querySelector('[data-action="open-modal"]');
 const modalBtn = document.querySelector('.modal__save-btn');
 // const closewModalBtn = document.querySelector('.modal__btn');
 const modal = document.querySelector('.modal');
