@@ -1,0 +1,62 @@
+.date_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date__div {
+  display: flex;
+  flex-direction: row;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+
+.date__input {
+  outline: none;
+  border: none;
+  position: relative;
+
+  display: inline-flex;
+  padding: 10px;
+
+  /* padding: 10px 45px 10px 10px; */
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  font-size: 12px;
+  width: 215px;
+
+  &::placeholder {
+    color: #7e7e7e;
+    font-size: 12px;
+  }
+}
+
+.date__icon {
+  fill: white;
+  width: 15px;
+  height: 15px;
+}
+
+.date__btn {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  border-radius: 0px 20px 20px 0px;
+  background: #000;
+  /* display: inline-flex; */
+  padding: 8px 10px;
+  /* align-items: flex-start; */
+  /* gap: 10px; */
+}
+
+.date__text {
+  color: #000;
+  text-align: right;
+  font-size: 12px;
+}
