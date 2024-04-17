@@ -39,5 +39,5 @@ const output = document.getElementById("user__name");
 modalInput.addEventListener("input", onInputChange);
 
 function onInputChange(e) {
-    output.textContent = e.currentTarget.value || "Незнайомець";
+    output.textContent = e.currentTargent.value || "Незнайомець";
 }
