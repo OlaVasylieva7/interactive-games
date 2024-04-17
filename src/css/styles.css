@@ -1,7 +1,6 @@
 @import url('./base/reset.css');
 @import url('./base/common.css');
 
-/* @import url('./layout/modal.css'); */
 @import url('./layout/header.css');
 @import url('./layout/date.css');
 /*@import url('./layout/guess.css');
@@ -12,8 +11,8 @@
 @import url('./layout/football.css');
 @import url('./layout/enter-numbers.css');
 @import url('./layout/our-team.css');
-@import url('./layout/scientists.css');
-@import url('./layout/footer.css'); */
+@import url('./layout/scientists.css'); */
+@import url('./layout/footer.css');
 
 :root {
   font-family: 'Montserrat Alternates', sans-serif;
