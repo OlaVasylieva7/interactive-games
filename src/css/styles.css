@@ -1,9 +1,9 @@
 @import url('./base/reset.css');
 @import url('./base/common.css');
 
-
+@import url('./layout/modal.css');
 @import url('./layout/header.css');
- @import url('./layout/date.css');
+@import url('./layout/date.css');
 /*@import url('./layout/guess.css');
 @import url('./layout/rsp.css');
 @import url('./layout/calculator.css');
@@ -15,11 +15,10 @@
 @import url('./layout/scientists.css');
 @import url('./layout/footer.css'); */
 
-
 :root {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
-  
+
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
 
@@ -29,11 +28,3 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-
-
-
-
-
-
-

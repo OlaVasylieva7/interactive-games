@@ -11,9 +11,6 @@
   padding-bottom: 23px;
 }
 
-.logo {
-}
-
 .logo__container {
   display: flex;
 
@@ -57,10 +54,12 @@
 }
 
 .greeting {
-    display: flex;
+  display: flex;
   color: #000;
   text-align: right;
   font-size: 12px;
+
+  width: 100px;
 
   margin-left: 51px;
 }

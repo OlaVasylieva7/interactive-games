@@ -1,8 +1,58 @@
-<section>
-  <p>
-    Привіт! <br />
-    Ви потрапили на сайт інтерактивних ігор та завдань <br />
-    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
-    Бажаємо Вам гарно провести час!
-  </p>
-</section>
+<!-- <button class="button" data-action="open-modal">Відкрити модалку</button> -->
+
+<div class="backdrop js-backdrop">
+  <div class="modal">
+    <p class="modal__text backdown">
+      Привіт! <br />
+      Ви потрапили на сайт інтерактивних ігор та завдань <br />
+      Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
+      Бажаємо Вам гарно провести час!
+    </p>
+
+    <div class="modal__subcontainer">
+      <p class="modal__text">Введіть своє ім’я:</p>
+
+      <input
+        type="text"
+        class="modal__input"
+        placeholder="Ваше ім’я...           "
+      />
+      <button class="modal__save-btn">Зберегти</button>
+    </div>
+
+    <ul class="modal__list">
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-1"
+          src="./img/modal/sword.png"
+          alt="sword"
+        />
+      </li>
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-2"
+          src="./img/modal/puzzle.png"
+          alt="puzzle"
+        />
+      </li>
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-3"
+          src="./img/modal/tic-tac-toe.png"
+          alt="tic tac toe"
+        />
+      </li>
+      <li class="modal__item">
+        <img
+          class="modal__img modal__img-position-4"
+          src="./img/modal/game-development.png"
+          alt="game-development"
+        />
+      </li>
+    </ul>
+
+    <!-- <button type="button" class="button" data-action="close-modal">
+      Закрити
+    </button> -->
+  </div>
+</div>
