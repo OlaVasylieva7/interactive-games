@@ -1,7 +1,7 @@
 // import './js/dark-theme';
 // import './js/modal';
 // import './js/header';
-// import './js/date';
+import './js/date';
 // import './js/guess';
 // import './js/rsp';
 // import './js/calculator';
