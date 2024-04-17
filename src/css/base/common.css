@@ -17,3 +17,10 @@ h1 {
   font-weight: 400;
   text-align: center;
 }
+
+hr {
+  width: 536px;
+  height: 0px;
+  color: #000;
+  margin-top: 36px;
+}
