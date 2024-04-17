@@ -20,12 +20,61 @@
     />
     
     <script type="module" crossorigin src="/interactive-games/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-6ed90936.css">
+    <link rel="stylesheet" href="/interactive-games/assets/index-1b1ced8a.css">
   </head>
   <body>
+    <!-- <section>
+  <p>
+    Привіт! <br />
+    Ви потрапили на сайт інтерактивних ігор та завдань <br />
+    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
+    Бажаємо Вам гарно провести час!
+  </p>
+</section>
+ -->
     <header class="header">
-    
+  <nav class="nav">
+    <div class="container">
+      <a href="" class="logo">
+        <div class="logo__container">
+          <svg class="logo__icon" width="40" height="38">
+            <use href="/interactive-games/assets/symbol-defs-ac83f374.svg#logo"></use>
+          </svg>
+          <div class="logo__text">
+            <p class="logo__coding">Coding</p>
+            <p class="logo__magic">Magic</p>
+          </div>
+        </div>
+      </a>
+
+      <ul class="nav__list">
+        <li class="nav__item interactive">
+          <a href=""
+            >Інтерактив
+            <!-- <svg class="logo__icon" width="5" height="9">
+              <use href="/img/symbol-defs.svg#icon-arrow"></use>
+            </svg> -->
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVHgBjYxRDYAwDEQPFCBhEpAwKUjACTgAJ5OABSZhDtZl99EtXbKXXNJer7cAcKj8GOP0ELRhBJv7TmPrgmX/rCLPB02gb3KIHs6X6NTHtQu/osjGJLoxgbfMDOGhDR2if3TSAAAAAElFTkSuQmCC" alt="" class="arrow" />
+          </a>
+        </li>
+        <li class="nav__item"><a href="">Наша команда</a></li>
+        <li class="nav__item"><a href="">Контакти</a></li>
+      </ul>
+
+      <!-- <svg class="day__mode">
+        <use href="/img/symbol-defs.svg#"></use>
+      </svg>
+      <svg class="night__mode">
+        <use href="/img/symbol-defs.svg#"></use>
+      </svg> -->
+
+      <img width="40" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPhSURBVHgBrVZbKGxfGP9mj9zLuIRcR8k1zkS5pPw9SH9FxuM/YbwRaUqElJkXlxczHv95MF6kyPWFJ0MePLhMeXAUmYlIbkMU5XK+7+vs3d5zHJ2O/au911rfXmvtX+u7/JYGPoDZbNZtbGyYbm5u/qmqqjJEREToyf709ARnZ2f8pKenQ1hYGHwF7+/vbmxc2C4MDQ05Ppqj8TVER0cbCwoKxjs6OnRlZWUfbux2u8HpdMLs7CwkJSV9mahIFh+rL1EFwczMTNvAwIDZaDSCLyF6fAmTzWKxQGhoqCokCW9vbxYkaRXHgtjR6/X9k5OTv5AjTExMQG1tLXi9XoUd14DD4QCtVgt3d3egBgRBsPT09Nh8CZrwJCwGgwFeXl5gYWFBIvP6+goulwvo2/T0tLTR2toabG9vc390dBROTk5ALWg0GnNXVxeflJZe7e3tc93d3Trq39/fsytHRkagpKQEwsPDISQkBLKzs5lkbGws1NfXA8YoBAQEQGVlJW+K4QFTU1MQExMDagBP8t/8/Pz//bBvampq0osfdDodlJaWQnl5Oezu7kJNTY3CtTTu7e2FnZ0daGtrk+xEPjg4GFSELigoyKStqKiwdHZ2Zsi/0KkcHx9DS0sLlxY5Dg4OYGtrC9bX1yEhIUHx7fHxEfb39zlp1ABm9bOQmJiYLDdeX19za7Vaf7uQYnJ1dZVbOSg0Li4uQC2gm78RQQMNqGSgqyEqKgqen595/BmWlpY4aVJSUmB+fp5tlNVqZfNP6KUyQ7En4k9+QvHm7+//x/P/FgK61EMdIjg+Ps6xh2oCOTk5ny5EtYG6ujqe39jYyDZyuVpZ/BMuAeuZIpDITYTPYpDmUDanpqYq7B6PRzVFIaCqeISHhwcn6aocra2tfCGw2WyQnKzIIU6Eubk5yMvL41IjB9nVPEFMknmhoaHBga6VCt3V1RWg5EFfXx8UFxezWtCPyf2bm5ucvf39/ezaxcVFaTNKKrECqAQ33gscAiqcd3l5uUnMRD8/P5iZmWEChYWFrLNjY2Osx6enpzyHpJCKeHV1tbQbaXhubi6oCI4xljossN/39vbCUdqKKL6ysrIgMDCQZ1F7eHjI1ysUcSnbSfLi4uK4j/dHiI+Pl9aoQQ5Pzy4RJFxeXi6vrKxoUHvLSLbkoHFGRgYUFRUp7CSBzc3NfMryMvUVYGKMDg4Odotjrc8Pnehqz+3trQHrnE7MaDoZIignNjw8zBcKmqOGtOENxovS9h/eBe0K++8WREZGmtLS0ox4S9Hjrfkb2UiXz8/P4ejoiOugCi6lGuxCck4MM4fdbvf6TvgBUo2hmaXFAE8AAAAASUVORK5CYII=" alt="" />
+
+      <p class="greeting">Вітаємо, <span id="user__name">User</span>!</p>
+    </div>
+  </nav>
 </header>
+
 
     <main>
       <div class="container">
