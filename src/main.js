@@ -1,5 +1,5 @@
-// import './js/dark-theme';
-import './js/modal';
+import './js/dark-theme';
+// import './js/modal';
 // import './js/header';
 import './js/date';
 // import './js/guess';
