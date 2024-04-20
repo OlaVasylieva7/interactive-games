@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/interactive-games/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-f0468650.css">
+    <link rel="stylesheet" href="/interactive-games/assets/index-be881c8d.css">
   </head>
   <body>
     <!-- <button class="button" data-action="open-modal">Відкрити модалку</button> -->
@@ -88,7 +88,7 @@
       <a href="" class="logo">
         <div class="logo__container">
           <svg class="logo__icon" width="40" height="38">
-            <use href="/interactive-games/assets/symbol-defs-6df53bf3.svg#logo"></use>
+            <use href="/interactive-games/assets/symbol-defs-629eb8b4.svg#logo"></use>
           </svg>
           <div class="logo__text">
             <p class="logo__coding">Coding</p>
@@ -98,27 +98,32 @@
       </a>
 
       <ul class="nav__list">
-        <li class="nav__item interactive">
-          <a href=""
+        <li class="nav__item">
+          <a href="" class="interactive"
             >Інтерактив
-            <!-- <svg class="logo__icon" width="5" height="9">
-              <use href="/img/symbol-defs.svg#icon-arrow"></use>
-            </svg> -->
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVHgBjYxRDYAwDEQPFCBhEpAwKUjACTgAJ5OABSZhDtZl99EtXbKXXNJer7cAcKj8GOP0ELRhBJv7TmPrgmX/rCLPB02gb3KIHs6X6NTHtQu/osjGJLoxgbfMDOGhDR2if3TSAAAAAElFTkSuQmCC" alt="" class="arrow" />
+            <svg class="arrow" width="10" height="14">
+              <use href="/interactive-games/assets/symbol-defs-629eb8b4.svg#icon-arrow"></use>
+            </svg>
+            <!-- <img src="/img/arrow.svg" alt="" class="arrow" /> -->
           </a>
+
+          <ul class="submenu__list">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Числовий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ігровий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ознайомчий</a>
+            </li>
+          </ul>
         </li>
         <li class="nav__item"><a href="">Наша команда</a></li>
         <li class="nav__item"><a href="">Контакти</a></li>
       </ul>
 
-      <!-- <svg class="day__mode">
-        <use href="/img/symbol-defs.svg#"></use>
-      </svg>
-      <svg class="night__mode">
-        <use href="/img/symbol-defs.svg#"></use>
-      </svg> -->
-
-      <img width="40" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPhSURBVHgBrVZbKGxfGP9mj9zLuIRcR8k1zkS5pPw9SH9FxuM/YbwRaUqElJkXlxczHv95MF6kyPWFJ0MePLhMeXAUmYlIbkMU5XK+7+vs3d5zHJ2O/au911rfXmvtX+u7/JYGPoDZbNZtbGyYbm5u/qmqqjJEREToyf709ARnZ2f8pKenQ1hYGHwF7+/vbmxc2C4MDQ05Ppqj8TVER0cbCwoKxjs6OnRlZWUfbux2u8HpdMLs7CwkJSV9mahIFh+rL1EFwczMTNvAwIDZaDSCLyF6fAmTzWKxQGhoqCokCW9vbxYkaRXHgtjR6/X9k5OTv5AjTExMQG1tLXi9XoUd14DD4QCtVgt3d3egBgRBsPT09Nh8CZrwJCwGgwFeXl5gYWFBIvP6+goulwvo2/T0tLTR2toabG9vc390dBROTk5ALWg0GnNXVxeflJZe7e3tc93d3Trq39/fsytHRkagpKQEwsPDISQkBLKzs5lkbGws1NfXA8YoBAQEQGVlJW+K4QFTU1MQExMDagBP8t/8/Pz//bBvampq0osfdDodlJaWQnl5Oezu7kJNTY3CtTTu7e2FnZ0daGtrk+xEPjg4GFSELigoyKStqKiwdHZ2Zsi/0KkcHx9DS0sLlxY5Dg4OYGtrC9bX1yEhIUHx7fHxEfb39zlp1ABm9bOQmJiYLDdeX19za7Vaf7uQYnJ1dZVbOSg0Li4uQC2gm78RQQMNqGSgqyEqKgqen595/BmWlpY4aVJSUmB+fp5tlNVqZfNP6KUyQ7En4k9+QvHm7+//x/P/FgK61EMdIjg+Ps6xh2oCOTk5ny5EtYG6ujqe39jYyDZyuVpZ/BMuAeuZIpDITYTPYpDmUDanpqYq7B6PRzVFIaCqeISHhwcn6aocra2tfCGw2WyQnKzIIU6Eubk5yMvL41IjB9nVPEFMknmhoaHBga6VCt3V1RWg5EFfXx8UFxezWtCPyf2bm5ucvf39/ezaxcVFaTNKKrECqAQ33gscAiqcd3l5uUnMRD8/P5iZmWEChYWFrLNjY2Osx6enpzyHpJCKeHV1tbQbaXhubi6oCI4xljossN/39vbCUdqKKL6ysrIgMDCQZ1F7eHjI1ysUcSnbSfLi4uK4j/dHiI+Pl9aoQQ5Pzy4RJFxeXi6vrKxoUHvLSLbkoHFGRgYUFRUp7CSBzc3NfMryMvUVYGKMDg4Odotjrc8Pnehqz+3trQHrnE7MaDoZIignNjw8zBcKmqOGtOENxovS9h/eBe0K++8WREZGmtLS0ox4S9Hjrfkb2UiXz8/P4ejoiOugCi6lGuxCck4MM4fdbvf6TvgBUo2hmaXFAE8AAAAASUVORK5CYII=" alt="" />
+      <img src="/interactive-games/assets/light-theme-8d45d858.svg" alt="" class="switch-theme" id="icon" />
 
       <p class="greeting">Вітаємо, <span id="user__name">User</span>!</p>
     </div>
@@ -127,7 +132,7 @@
 
 
     <main>
-      <div class="container">
+      <div class="container" style="padding-top: 36px; padding-bottom: 0">
         <h1>Популярні інетрактивні ігри</h1>
         <hr />
         <section>
@@ -143,7 +148,7 @@
 
       <button type="button" class="date__btn">
         <svg class="date__icon">
-          <use href="/interactive-games/assets/symbol-defs-6df53bf3.svg#icon-dandruff"></use>
+          <use href="/interactive-games/assets/symbol-defs-629eb8b4.svg#icon-dandruff"></use>
         </svg>
       </button>
     </div>
@@ -178,7 +183,7 @@
     <a href="" class="logo">
       <div class="logo__container footer__logo">
         <svg class="logo__icon footer__logo-icon" width="40" height="38">
-          <use href="/interactive-games/assets/symbol-defs-6df53bf3.svg#logo"></use>
+          <use href="/interactive-games/assets/symbol-defs-629eb8b4.svg#logo"></use>
         </svg>
         <div class="logo__text">
           <p class="logo__coding footer__logo-coding">Coding</p>
