@@ -25,12 +25,13 @@ footer .container {
   width: 52px;
   height: 27px;
 }
+
 .footer__list {
   margin-right: 187px;
 }
 
 .footer__item {
-  color: #000;
+  color: var(--secondary-color);
   font-size: 12px;
   line-height: 170%;
   cursor: pointer;
@@ -61,18 +62,18 @@ footer .container {
 }
 
 .footer__btn {
-  color: #fff;
+  color: var(--main-color);
   font-size: 12px;
   display: inline-flex;
   padding: 10px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 20px;
-  background: #000;
+  background: var(--secondary-color);
   border: none;
 }
 
 .footer__subtitle {
-  color: #000;
+  color: var(--secondary-color);
   font-size: 6px;
 }

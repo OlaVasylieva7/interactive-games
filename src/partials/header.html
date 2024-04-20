@@ -14,27 +14,32 @@
       </a>
 
       <ul class="nav__list">
-        <li class="nav__item interactive">
-          <a href=""
+        <li class="nav__item">
+          <a href="" class="interactive"
             >Інтерактив
-            <!-- <svg class="logo__icon" width="5" height="9">
+            <svg class="arrow" width="10" height="14">
               <use href="/img/symbol-defs.svg#icon-arrow"></use>
-            </svg> -->
-            <img src="./img/arrow.png" alt="" class="arrow" />
+            </svg>
+            <!-- <img src="/img/arrow.svg" alt="" class="arrow" /> -->
           </a>
+
+          <ul class="submenu__list">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Числовий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ігровий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ознайомчий</a>
+            </li>
+          </ul>
         </li>
         <li class="nav__item"><a href="">Наша команда</a></li>
         <li class="nav__item"><a href="">Контакти</a></li>
       </ul>
 
-      <!-- <svg class="day__mode">
-        <use href="/img/symbol-defs.svg#"></use>
-      </svg>
-      <svg class="night__mode">
-        <use href="/img/symbol-defs.svg#"></use>
-      </svg> -->
-
-      <img width="40" height="20" src="./img/light-mode.png" alt="" />
+      <img src="/img/light-theme.svg" alt="" class="switch-theme" id="icon" />
 
       <p class="greeting">Вітаємо, <span id="user__name">User</span>!</p>
     </div>
