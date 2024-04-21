@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/interactive-games/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-be881c8d.css">
+    <link rel="stylesheet" href="/interactive-games/assets/index-1e34eb71.css">
   </head>
   <body>
     <!-- <button class="button" data-action="open-modal">Відкрити модалку</button> -->
@@ -162,9 +162,57 @@
         <hr />
         
         <hr />
-        
+        <div>
+  <h3 class="title">Калькулятор</h3>
+
+  <input type="number" id="first-number" placeholder="Введіть число" />
+  <div class="calculator-operators">
+    <input type="radio" name="operator" id="addition" value="+" /><label
+      for="addition"
+      required
+      >+
+    </label>
+    <input type="radio" name="operator" id="subtraction" value="-" /><label
+      for="subtraction"
+      >-</label
+    >
+    <input type="radio" name="operator" id="multiplication" value="*" /><label
+      for="multiplication"
+      >*</label
+    >
+    <input type="radio" name="operator" id="division" value="/" /><label
+      for="division"
+      >/</label
+    >
+  </div>
+  <input type="number" id="second-number" placeholder="Введіть число" />
+  <button type="button" id="button-result" disabled>=</button>
+  <p class="calculator-result" id="calculator-result"></p>
+</div>
+
         <hr />
-        
+        <section>
+  <h2 class="title">Калькулятор часу</h2>
+  <div class="time__calculator__container">
+    <div class="time__calculator__div">
+      <input
+        id="minutes"
+        class="time__calculator__input"
+        type="number"
+        placeholder="Введіть число"
+      />
+
+      <button type="button" id="convert" class="date__btn">
+        <svg class="time__calculator__icon">
+          <use href="/interactive-games/assets/symbol-defs-629eb8b4.svg#icon-dandruff"></use>
+        </svg>
+      </button>
+    </div>
+    <span class="dashed__separator"></span>
+    <p id="time-calculator-result" class="time__calculator__text result__tc">Результат</p>
+  </div>
+</section>
+
         <hr />
         
         <hr />
