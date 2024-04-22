@@ -170,28 +170,28 @@
   <h3 class="title">Калькулятор</h3>
 
   <input type="number" id="first-number" placeholder="Введіть число" />
-  <div class="calculator-operators">
-    <input type="radio" name="operator" id="addition" value="+" /><label
+  <div class="calculator__operators">
+    <input type="radio" class="calculator__operator" name="operator" id="addition" value="+" /><label
       for="addition"
       required
       >+
     </label>
-    <input type="radio" name="operator" id="subtraction" value="-" /><label
+    <input type="radio" class="calculator__operator" name="operator" id="subtraction" value="-" /><label
       for="subtraction"
       >-</label
     >
-    <input type="radio" name="operator" id="multiplication" value="*" /><label
+    <input type="radio" class="calculator__operator" name="operator" id="multiplication" value="*" /><label
       for="multiplication"
       >*</label
     >
-    <input type="radio" name="operator" id="division" value="/" /><label
+    <input type="radio" class="calculator__operator" name="operator" id="division" value="/" /><label
       for="division"
       >/</label
     >
   </div>
   <input type="number" id="second-number" placeholder="Введіть число" />
   <button type="button" id="button-result" disabled>=</button>
-  <p class="calculator-result" id="calculator-result"></p>
+  <input class="calculator__result" id="calculator-result" placeholder="Результат"></input>
 </div>
 
         <hr />
