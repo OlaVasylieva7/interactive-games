@@ -1,6 +1,6 @@
 // Дані для роботи з вченими
 
-const scientists = [
+const scientistsArray = [
   {
     name: 'Albert',
     surname: 'Einstein',
@@ -86,3 +86,11 @@ const scientists = [
     id: 12,
   },
 ];
+
+
+const options = document.querySelectorAll(".scientists__item");
+const scientists = document.querySelectorAll(".option");
+
+function clearScientists() {
+  scientists.forEach(scientist => scientist.innerHTML = "")
+}
