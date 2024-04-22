@@ -4,6 +4,9 @@ const calcSecondElem = document.getElementById("second-number");
 function calculateResult() {
   const calcFirstNumber = +calcFirstElem.value || 0;
   const calcSecondNumber = +calcSecondElem.value || 0;
+  if(calcSecondNumber === 0) {
+    return 'ділення на нуль!';
+  }
   const calcOperatorElem = document.querySelector(
     'input[name="operator"]:checked'
   );
@@ -20,8 +23,11 @@ function calculateResult() {
       return calcFirstNumber / calcSecondNumber;
     default:
       return "";
+
   }
 }
+
+
 
 const operatorElements = document.querySelectorAll('input[name="operator"]');
 operatorElements.forEach((elem) => {
@@ -34,5 +40,6 @@ const buttonResult = document.getElementById("button-result");
 buttonResult.addEventListener("click", function () {
   const resultValue = document.getElementById("calculator-result");
   const result = calculateResult();
-  resultValue.innerText = result;
+  resultValue.innerText = result; 
 });
+

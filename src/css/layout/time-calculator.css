@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 392px;
-  margin-left: 312px;
-  margin-right: 380px;
+  width: 466px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .time__calculator__div {
@@ -51,7 +51,7 @@
 
 .time__calculator__text {
   color: var(--secondary-color);
-  text-align: right;
+  text-align: left;
   font-size: 12px;
 }
 
@@ -65,5 +65,5 @@
 }
 
 .result__tc {
-width: 76px;
+width: 150px;
 }
