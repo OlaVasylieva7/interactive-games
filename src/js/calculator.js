@@ -4,9 +4,9 @@ const calcSecondElem = document.getElementById("second-number");
 function calculateResult() {
   const calcFirstNumber = +calcFirstElem.value || 0;
   const calcSecondNumber = +calcSecondElem.value || 0;
-  if(calcSecondNumber === 0) {
-    return 'ділення на нуль!';
-  }
+  // if(calcSecondNumber === 0) {
+  //   return 'ділення на нуль!';
+  // }
   const calcOperatorElem = document.querySelector(
     'input[name="operator"]:checked'
   );
