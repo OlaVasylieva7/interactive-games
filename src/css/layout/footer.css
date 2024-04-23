@@ -41,7 +41,8 @@ footer .container {
 .footer__subscribe-container {
   display: flex;
   width: 347px;
-  margin-bottom: 18px;
+
+  flex-wrap: wrap;
 }
 
 .footer__input {
@@ -77,4 +78,5 @@ footer .container {
 .footer__subtitle {
   color: var(--secondary-color);
   font-size: 6px;
+  margin-top: 18px;
 }
