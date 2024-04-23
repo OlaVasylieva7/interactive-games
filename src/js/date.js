@@ -5,8 +5,7 @@ const dateAnswer = document.querySelector(".date__text");
 dateBtn.addEventListener("click", onDateBtn);
 
 function onDateBtn(e) {
-    if (dateInput.value) {
-        // dateAnswer.textContent = "Потрібно ввести рік народження"
+    if (dateInput.value !== "") {
         if (dateInput.value % 4 === 0) {
             dateAnswer.textContent = "Ви народилися у високосний рік!";
             dateAnswer.style.color = "#039900";
@@ -14,5 +13,9 @@ function onDateBtn(e) {
             dateAnswer.textContent = "Ви народилися не у високосний рік!";
             dateAnswer.style.color = "#900";
         }
+    } else {
+        dateAnswer.textContent = "Потрібно ввести рік народження";
+        dateAnswer.style.color = "#900";
+
     }
 }
