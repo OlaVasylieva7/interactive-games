@@ -1,38 +1,40 @@
-<button class="button" data-action="open-modal">Відкрити модалку</button>
-
 <div class="backdrop js-backdrop">
-  <div class="modal thank__modal">
-    <p class="thank__title">Дякую за підписку!</p>
+  <div class="thanks__modal">
+    <p class="thanks__title">Дякую за підписку!</p>
 
     <ul class="modal__list">
       <li class="modal__item">
         <img
           class="modal__img modal__img-position-1"
-          src="./img/modal/sword.png"
+          src="./img/icons/sword.svg"
           alt="sword"
         />
       </li>
       <li class="modal__item">
         <img
           class="modal__img modal__img-position-2"
-          src="./img/modal/puzzle.png"
+          src="./img/icons/puzzle.svg"
           alt="puzzle"
         />
       </li>
       <li class="modal__item">
         <img
           class="modal__img modal__img-position-3"
-          src="./img/modal/tic-tac-toe.png"
+          src="./img/icons/tic-tac-toe.svg"
           alt="tic tac toe"
         />
       </li>
       <li class="modal__item">
         <img
           class="modal__img modal__img-position-4"
-          src="./img/modal/game-development.png"
+          src="./img/icons/game-development.svg"
           alt="game-development"
         />
       </li>
     </ul>
+
+    <button type="button" class="modal__btn-close" data-action="close-modal">
+      <img class="modal__btn-icon" src="/img/icons/cross.svg" alt="" />
+    </button>
   </div>
 </div>
