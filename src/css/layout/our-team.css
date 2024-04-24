@@ -13,6 +13,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+
+  /* position: relative; */
 }
 .out-team__name {
   color: var(--secondary-color);
@@ -43,17 +45,19 @@
   background-color: #797979;
 }
 
-/* .swiper-button-next {
-  width: 50px;
-  height: 100px;
-  flex-shrink: 0;
-  stroke-width: 1px;
-  color: var(--secondary-color);
-}
+.swiper-button-next,
 .swiper-button-prev {
+  stroke-width: 1px;
+  stroke: var(--secondary-color);
   width: 50px;
   height: 100px;
-  flex-shrink: 0;
-  stroke-width: 1px;
-  color: var(--secondary-color);
-} */
+  border: none;
+
+  position: absolute;
+  top: 20%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
