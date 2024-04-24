@@ -17,7 +17,8 @@ body.show-modal .modal {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
   z-index: 999;
 
   pointer-events: none;
@@ -113,4 +114,17 @@ body.show-modal .modal {
     top: 154px;
     right: 41px;
   }
+}
+
+.modal__btn-icon {
+  background-color: transparent;
+}
+
+.modal__btn-close {
+  background-color: transparent;
+  border: none;
+
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
