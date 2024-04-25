@@ -18,9 +18,7 @@ function calculateResult() {
     case '*':
       return calcFirstNumber * calcSecondNumber;
     case '/':
-      return calcSecondNumber !== 0
-        ? calcFirstNumber / calcSecondNumber
-        : 'ділення на нуль!';
+      return calcSecondNumber !== 0 ? calcFirstNumber / calcSecondNumber: 'ділення на нуль!';
     default:
       return '';
   }
