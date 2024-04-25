@@ -11,11 +11,7 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // autoplay: {
-    //     delay: 2300,
-    //     stopOnLastSlide: true,
-    //     disableonInteraction: true,
-    // },
+
     freeMode: true,
     speed: 800,
     keyboard: true,
