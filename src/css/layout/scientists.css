@@ -50,6 +50,23 @@
   border-radius: 20px;
   background: var(--secondary-color);
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid var(--main-color);
+
+  transition: all 300ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-color);
+    border: 1px solid var(--secondary-color);
+  }
+  &:hover {
+    color: var(--secondary-color);
+  }
+
+  &:focus {
+    color: #039900;
+  }
 }
 
 .last-option {

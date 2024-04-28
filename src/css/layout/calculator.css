@@ -42,7 +42,8 @@
 }
 
 .calculator__operator[type='radio']:checked + label {
-  background-color: blueviolet;
+  transition: all 200ms ease-in-out;
+  background-color: #8acecf;
 }
 
 .calculator__operators label {
@@ -87,12 +88,14 @@
   border: none;
 
   margin: auto 0;
-  
+
   border-radius: 20px;
   background-color: #000;
   color: var(--main-color);
   background: var(--secondary-color);
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+  transition: all 200ms ease-in-out;
 }
 
 .calculator__result {
@@ -110,9 +113,9 @@
 
   border-radius: 20px;
   color: #7e7e7e;
-  background-color: #d7d7d7;  
+  background-color: #d7d7d7;
 }
 
 .calculator__convert__btn:hover {
-  background-color: blueviolet;
+  background-color: #8acecf;
 }
