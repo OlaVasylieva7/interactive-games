@@ -1,25 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let field = document.getElementById('field');
-    let ball = document.querySelector('.football__ball');
+document.addEventListener('DOMContentLoaded', function () {
+  let field = document.getElementById('field');
+  let ball = document.getElementById('ball');
 
-    field.addEventListener('click', function(event) {
-        let fieldCoords = field.getBoundingClientRect();
+  field.addEventListener('click', function (event) {
+    let fieldCoordinates = field.getBoundingClientRect();
 
-        let ballCoords = {
-            top: event.clientY - fieldCoords.top - ball.clientHeight / 2,
-            left: event.clientX - fieldCoords.left - ball.clientWidth / 2
-        };
+    let clickX = event.clientX - fieldCoordinates.left;
+    let clickY = event.clientY - fieldCoordinates.top;
 
-        if (ballCoords.top < 0) ballCoords.top = 0;
-        if (ballCoords.left < 0) ballCoords.left = 0;
-        if (ballCoords.left + ball.clientWidth > field.clientWidth) {
-            ballCoords.left = field.clientWidth - ball.clientWidth;
-        }
-        if (ballCoords.top + ball.clientHeight > field.clientHeight) {
-            ballCoords.top = field.clientHeight - ball.clientHeight;
-        }
+    let ballX = clickX - ball.clientWidth / 2;
+    let ballY = clickY - ball.clientHeight / 2;
 
-        ball.style.left = ballCoords.left + 'px';
-        ball.style.top = ballCoords.top + 'px';
-    });
+    ballX = Math.max(0, Math.min(ballX, field.clientWidth - ball.clientWidth));
+    ballY = Math.max(0, Math.min(ballY, field.clientHeight - ball.clientHeight));
+
+    ball.style.left = ballX + 'px';
+    ball.style.top = ballY + 'px';
+  });
 });
