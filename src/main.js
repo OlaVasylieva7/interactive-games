@@ -7,7 +7,7 @@ import './js/date';
 import './js/calculator';
 import './js/time-calculator';
 // import './js/dinosaur';
-// import './js/football';
+import './js/football';
 // import './js/enter-numbers';
 import './js/our-team';
 import './js/scientists';
