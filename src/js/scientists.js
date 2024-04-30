@@ -1,6 +1,6 @@
 // Дані для роботи з вченими
 
-const scientistsArray = [
+const scientists = [
   {
     name: 'Albert',
     surname: 'Einstein',
@@ -114,19 +114,66 @@ const scientistsArray = [
 
 const elements = {
   scientistsList: document.getElementById("scientists-list"),
-  scientists: document.querySelectorAll(".scientists__item"),
+  scientistsEl: document.querySelectorAll(".scientists__item"),
   optionsList: document.getElementById("options-list"),
   options: document.querySelectorAll(".option"),
 }
 
-const { scientistsList, scientists, optionsList, options } = elements;
+const { scientistsList, scientistsEl, optionsList, options } = elements;
+render(scientists);
 
-render(scientistsArray);
 function render(scientists) {
   scientistsList.innerHTML = "";
   scientists.forEach((scientist) => {
-    scientistsList.innerHTML += `<li class="scientists__item"><img src="/img/scientists.png" alt="" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+    // scientistsList.innerHTML += `<li class="scientists__item"><img src="/img/scientists.png" alt="" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+    scientistsList.innerHTML += `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
   });
 }
 
-// scientistsList.innerHTML += `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+
+
+// 1
+// function scientistsWereBornIn19thCentury() {
+//   const scientists19thCentury = scientists.filter(scientist => scientist.born >= 1801 && scientist.born <= 1900);
+//   render(scientists19thCentury);
+// }
+
+// // 2
+// function sortScientistsAlphabetically() {
+//   // const sortedScientistsList = scientists.toSorted((scientist, nextScientist) => {
+//   const sortedScientists = scientists.sort((scientist, nextScientist) => {
+//     const scientistName = scientist.name.toUpperCase();
+//     const nextScientistName = nextScientist.name.toUpperCase();
+//     if (scientistName > nextScientistName) {
+//       return 1;
+//     } else if (scientistName < nextScientistName) {
+//       return -1;
+//     } else { return 0 };
+//   });
+//   render(sortedScientists);
+// }
+
+// // 3
+// function sortScientistsByYears() { }
+
+// // 4
+// function findLatestBornScientist() { }
+
+// // 5
+// function findBirthYearOfAlbertEinstein() {
+//   const yearsOfAlbertEinstein = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein");
+//   render([scientists[yearsOfAlbertEinstein]]);
+
+// }
+
+// // 6
+// function findScientistsWithFirstSurnameLetterC() { }
+
+// // 7
+// function removeScientistsWithFirstNameLetterA() { }
+
+// // 8
+// function findLongestAndShortestLivedScientists() { }
+
+// // 9
+// function findScientistsWithMatchingFirstAndLastNames() { }
