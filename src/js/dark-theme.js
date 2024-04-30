@@ -6,8 +6,8 @@ function onIconClick() {
     document.body.classList.toggle("dark-theme");
 
     if (document.body.classList.contains("dark-theme")) {
-        icon.src = "/img/icons/dark-theme.svg"
+        icon.src = "https://raw.githubusercontent.com/OlaVasylieva7/interactive-games/e8b8ec56d1ff175f06f884377424fc9dbc4ac883/src/img/icons/dark-theme.svg"
     } else {
-        icon.src = "/img/icons/light-theme.svg"
+        icon.src = "https://raw.githubusercontent.com/OlaVasylieva7/interactive-games/e8b8ec56d1ff175f06f884377424fc9dbc4ac883/src/img/icons/light-theme.svg"
     }
 }
