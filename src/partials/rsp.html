@@ -4,17 +4,17 @@
   <div class="rsp__game">
     <ul class="rsp__image__list">
       <li class="rsp__image__item">
-        <button type="button" class="rsp__btn">
+        <button id="stone__button" type="button" class="rsp__btn">
           <img src="./img/rsp/stone.png" alt="stone" />
         </button>
       </li>
       <li class="rsp__image__item">
-        <button type="button" class="rsp__btn">
+        <button id="scissors__button" type="button" class="rsp__btn">
           <img src="./img/rsp/scissors.png" alt="scissors" />
         </button>
       </li>
       <li class="rsp__image__item">
-        <button type="button" class="rsp__btn">
+        <button id="paper__button" type="button" class="rsp__btn">
           <img src="./img/rsp/paper.png" alt="paper" />
         </button>
       </li>
@@ -22,11 +22,13 @@
 
     <div class="rsp__counter">
       <p>Рахунок:</p>
-      <p>Комп’ютер - 0</p>
-      <p>Ви - 0</p>
+      <p id="counter__comp">Комп’ютер - 0</p>
+      <p id="counter__user">Ви - 0</p>
     </div>
   </div>
   <p class="rsp__text">Ви виграли раунд!</p>
 
-  <button type="button" class="srp__comp__btn">Варіант комп’ютера</button>
+  <button id="comp__button" type="button" class="srp__comp__btn">
+    Варіант комп’ютера
+  </button>
 </section>
