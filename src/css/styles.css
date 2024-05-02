@@ -4,27 +4,34 @@
 @import url('./layout/modal.css');
 @import url('./layout/header.css');
 @import url('./layout/date.css');
-@import url('./layout/guess.css');
-@import url('./layout/rsp.css');
-/*@import url('./layout/calculator.css');
-@import url('./layout/time-calculator.css');*/
-@import url('./layout/dinosaur.css');
-/*@import url('./layout/football.css');*/
-@import url('./layout/enter-numbers.css');
-/*@import url('./layout/our-team.css');
-@import url('./layout/scientists.css'); */
+/* @import url('./layout/guess.css'); */
+/* @import url('./layout/rsp.css'); */
+@import url('./layout/calculator.css');
+@import url('./layout/time-calculator.css');
+/* @import url('./layout/dinosaur.css'); */
+@import url('./layout/football.css');
+/* @import url('./layout/enter-numbers.css'); */
+@import url('./layout/our-team.css');
+@import url('./layout/scientists.css');
 @import url('./layout/footer.css');
 
 :root {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
 
-  color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
+
+  --main-color: #fff;
+  --secondary-color: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.dark-theme {
+  --main-color: #000;
+  --secondary-color: #fff;
 }
