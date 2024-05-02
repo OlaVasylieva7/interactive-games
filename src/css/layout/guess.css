@@ -1,0 +1,17 @@
+.guess__input {
+  outline: none;
+  border: none;
+  position: relative;
+
+  display: inline-flex;
+  padding: 10px;
+
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #d7d7d7;
+
+  width: 115px;
+  color: #7e7e7e;
+  font-size: 12px;
+}

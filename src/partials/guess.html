@@ -3,19 +3,20 @@
   <div class="date_container">
     <div class="date__div">
       <input
-        class="date__input"
+        id="date__input"
+        class="guess__input"
         type="number"
         placeholder="Введіть число"
         data-min-length="1"
       />
 
-      <button type="button" class="date__btn">
+      <button id="date__button" type="button" class="date__btn">
         <svg class="date__icon">
           <use href="./img/symbol-defs.svg#icon-dandruff"></use>
         </svg>
       </button>
     </div>
 
-    <p class="date__text">Вітаю, ви вгадали число! (number)</p>
+    <p id="text" class="date__text">Введіть число від 1 до 10</p>
   </div>
 </section>
