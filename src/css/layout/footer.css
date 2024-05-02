@@ -13,18 +13,19 @@ footer .container {
 }
 
 .footer__logo-icon {
-  width: 45px;
-  height: 42px;
+  /* width: 45px;
+  height: 42px; */
+
+  width: 59px;
+  height: 53px;
 }
 
 .footer__logo-coding {
-  width: 73px;
-  height: 20px;
+  font-size: 20px;
 }
 
 .footer__logo-magic {
-  width: 52px;
-  height: 27px;
+  font-size: 20px;
 }
 
 .footer__list {
