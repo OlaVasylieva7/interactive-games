@@ -1,9 +1,9 @@
-/* .modal {
-  padding: 46px 41px;
+.thanks__modal {
+  padding: 30px;
   border-radius: 20px;
-  max-width: 576px;
+  max-width: 463px;
   width: 100%;
-  min-height: 316px;
+  min-height: 245px;
   background-color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -19,26 +19,29 @@
   text-align: center;
   font-family: Inter;
   font-size: 20px;
+
+  margin-top: 53px;
 }
 
-.modal__item {
+.thanks-modal__item {
+  position: absolute;
   &:nth-child(1) {
-    top: 154px;
-    left: 41px;
+    top: 69px;
+    left: 43px;
   }
 
   &:nth-child(2) {
-    bottom: 56px;
-    left: 85px;
+    bottom: 70px;
+    left: 87px;
   }
 
   &:nth-child(3) {
-    bottom: 56px;
-    right: 85px;
+    bottom: 70px;
+    right: 86px;
   }
 
   &:nth-child(4) {
-    top: 154px;
-    right: 41px;
+    top: 69px;
+    right: 42px;
   }
-} */
+}
