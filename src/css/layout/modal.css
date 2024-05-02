@@ -127,4 +127,11 @@ body.show-modal .modal {
   position: absolute;
   top: 30px;
   right: 30px;
+
+  transition: all 300ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
