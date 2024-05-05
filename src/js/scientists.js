@@ -1,6 +1,5 @@
 // Дані для роботи з вченими
-
-const scientistsArray = [
+const scientists = [
     {
         name: 'Albert',
         surname: 'Einstein',
@@ -112,20 +111,183 @@ const scientistsArray = [
 ];
 
 
-const elements = {
-    scientistsList: document.getElementById("scientists-list"),
-    scientists: document.querySelectorAll(".scientists__item"),
-    optionsList: document.getElementById("options-list"),
-    options: document.querySelectorAll(".option"),
+const options = document.querySelectorAll(".option");
+const scientistsItem = document.querySelectorAll(".scientists__item");
+let on = true;
+let idx = 0;
+
+options[0].addEventListener("click", scientistsWereBornIn19thCentury);
+options[1].addEventListener("click", sortScientistsAlphabetically);
+options[2].addEventListener("click", sortScientistsByYears);
+options[3].addEventListener("click", findLatestBornScientist);
+options[4].addEventListener("click", findBirthYearOfAlbertEinstein);
+options[5].addEventListener("click", findScientistsWithFirstSurnameLetterC);
+options[6].addEventListener("click", removeScientistsWithFirstNameLetterA);
+options[7].addEventListener("click", findLongestAndShortestLivedScientists);
+options[8].addEventListener("click", findScientistsWithMatchingFirstAndLastNames);
+
+
+function clearScientists() {
+    scientistsItem.forEach(scientist => scientist.innerHTML = "");
 }
 
-const { scientistsList, scientists, optionsList, options } = elements;
+function addRotating() {
+    scientistsItem.forEach(scientist => scientist.style.transform = "scaleX(-1)");
+}
 
-render(scientistsArray);
-function render(scientists) {
-    scientistsList.innerHTML = "";
-    scientists.forEach((scientist) => {
-        // scientistsList.innerHTML += `<li class="scientists__item"><img src="/img/scientists.png" alt="" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
-        scientistsList.innerHTML += `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
-    });
+function removeRotating() {
+    scientistsItem.forEach(scientist => scientist.style.transform = "scaleX(1)");
+}
+
+function scientistsWereBornIn19thCentury() {
+    on = false;
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            for (let scientist of scientists) {
+                if (scientist.born >= 1801 && scientist.born <= 1900) {
+                    scientistsItem[idx].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+                    idx += 1;
+                }
+            }
+            idx = 0;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+}
+
+function sortScientistsAlphabetically() {
+    on = false;
+    scientists.sort((a, b) => a.name.localeCompare(b.name));
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            for (let scientist of scientists) {
+                scientistsItem[idx].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+                idx += 1;
+            }
+            idx = 0;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+
+}
+
+function sortScientistsByYears() {
+    on = false;
+    scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            for (let scientist of scientists) {
+                scientistsItem[idx].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+                idx += 1;
+            }
+            idx = 0;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+}
+
+function findLatestBornScientist() {
+    on = false;
+    scientists.sort((a, b) => b.born - a.born);
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            scientistsItem[0].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientists[0].url}" alt="${scientists[0].alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientists[0].name} ${scientists[0].surname}</h3><p class="scientists__years">${scientists[0].born} - ${scientists[0].dead}</p></div></li>`;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+}
+
+function findBirthYearOfAlbertEinstein() {
+    on = false;
+    const einstein = scientists.find((scientist) => scientist.name === "Albert" && scientist.surname === "Einstein");
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            scientistsItem[0].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${einstein.url}" alt="${einstein.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${einstein.name} ${einstein.surname}</h3><p class="scientists__years">${einstein.born} - ${einstein.dead}</p></div></li>`;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+}
+
+function findScientistsWithFirstSurnameLetterC() {
+    on = false;
+    const objs = scientists.filter((scientist) => scientist.surname[0] !== "C");
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            for (let scientist of objs) {
+                scientistsItem[idx].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+                idx += 1;
+            }
+            idx = 0;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+}
+
+function removeScientistsWithFirstNameLetterA() {
+    on = false;
+    const objs = scientists.filter((scientist) => scientist.name[0] !== "A");
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            for (let scientist of objs) {
+                scientistsItem[idx].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+                idx += 1;
+            }
+            idx = 0;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+}
+
+function findLongestAndShortestLivedScientists(e) {
+    on = false;
+    scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            scientistsItem[0].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientists[0].url}" alt="${scientists[0].alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientists[0].name} ${scientists[0].surname}</h3><p class="scientists__years">${scientists[0].born} - ${scientists[0].dead}</p></div></li>`;
+            scientistsItem[1].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientists[scientists.length - 1].url}" alt="${scientists[scientists.length - 1].alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientists[scientists.length - 1].name} ${scientists[scientists.length - 1].surname}</h3><p class="scientists__years">${scientists[scientists.length - 1].born} - ${scientists[scientists.length - 1].dead}</p></div></li>`;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
+}
+
+function findScientistsWithMatchingFirstAndLastNames(e) {
+    on = false;
+    const objs = scientists.filter((scientist) => scientist.name[0] === scientist.surname[0]);
+    addRotating();
+    setTimeout(clearScientists, 250);
+    setTimeout(() => {
+        removeRotating();
+        setTimeout(() => {
+            for (let scientist of objs) {
+                scientistsItem[idx].innerHTML = `<li class="scientists__item"><img class="scientists__img" src="${scientist.url}" alt="${scientist.alt}" class="scientists__img" /><div class="scientists__box"><h3 class="scientists__fullname">${scientist.name} ${scientist.surname}</h3><p class="scientists__years">${scientist.born} - ${scientist.dead}</p></div></li>`;
+                idx += 1;
+            }
+            idx = 0;
+        }, 250);
+        setTimeout(() => on = true, 1000);
+    }, 1000);
 }
