@@ -1,0 +1,79 @@
+.dino__section {
+  width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dino__container {
+  font-family: Press Start 2P, cursive;
+}
+
+.dino__game {
+  position: relative;
+  width: 720px;
+  height: 241px;
+  overflow: hidden;
+}
+
+.score {
+  position: absolute;
+  right: 5vmin;
+  top: 1vmin;
+  font-size: 0.8rem;
+}
+
+.start-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gameover-message {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gameover-message p {
+  letter-spacing: 0.5em;
+}
+
+.gameover-message span {
+  font-size: 0.6rem;
+  text-transform: none;
+}
+
+.ground {
+  --left: 0;
+  width: 300%;
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.dino {
+  --bottom: 0;
+  height: 30%;
+  position: absolute;
+  left: 1%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.hide {
+  display: none;
+}
