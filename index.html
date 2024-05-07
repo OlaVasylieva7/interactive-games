@@ -25,10 +25,10 @@
 
     
     <script type="module" crossorigin src="/interactive-games/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-c6bc117a.css">
+    <link rel="stylesheet" href="/interactive-games/assets/index-99edb41e.css">
   </head>
   <body>
-    <div class="backdrop js-backdrop">
+    <!-- <div class="backdrop js-backdrop">
   <div class="modal">
     <p class="modal__text backdown">
       Привіт! <br />
@@ -72,11 +72,11 @@
     </ul>
 
     <button type="button" class="modal__btn-close" data-action="close-modal">
-      <img class="modal__btn-icon" src="/interactive-games/assets/cross-37faabd5.svg" alt="" />
+      <img class="modal__btn-icon" src="/img/icons/cross.svg" alt="" />
     </button>
   </div>
 </div>
-
+ -->
     <div class="backdrop js-backdrop">
   <div class="thanks__modal">
     <p class="thanks__title">Дякую за підписку!</p>
@@ -240,11 +240,9 @@
       <p id="counter__user">Ви - 0</p>
     </div>
   </div>
-  <p class="rsp__text">Ви виграли раунд!</p>
+  <p class="rsp__text">Зробіть ваш вибір!</p>
 
-  <button id="comp__button" type="button" class="srp__comp__btn">
-    Варіант комп’ютера
-  </button>
+  <div id="comp__button" class="srp__comp__btn"></div>
   <hr />
 </section>
 
@@ -346,6 +344,9 @@
       </div>
     </div>
   </div>
+  <button id="start-game" type="button" class="dino__start__button">
+    Почніть гру!
+  </button>
   <hr />
 </section>
 
