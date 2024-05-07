@@ -4,8 +4,11 @@ const game = document.querySelector('#game');
 const scoreDisplay = document.querySelector('#score');
 const startMessage = document.querySelector('#start-message');
 const gameoverMessage = document.querySelector('#gameover-message');
+const buttonStartGame = document.getElementById('start-game');
 
-document.addEventListener('keydown', startGame, { once: true });
+buttonStartGame.addEventListener('click', startGame, { once: true });
+
+// buttonStartGame.addEventListener('click', startGame);
 
 /* general variables */
 let lastTime;
@@ -107,7 +110,7 @@ const grounds = document.querySelectorAll('.ground');
 
 function setupGround() {
   setCustomProperty(grounds[0], '--left', 0);
-  setCustomProperty(grounds[1], '--left', 300);
+  setCustomProperty(grounds[1], '--left', 100);
 }
 
 function updateGround(delta, speedScale) {
@@ -118,8 +121,8 @@ function updateGround(delta, speedScale) {
       delta * speedScale * GROUND_SPEED * -1
     ); /* moves the ground according to game speed */
 
-    if (getCustomProperty(ground, '--left') <= -300) {
-      incrementCustomProperty(ground, '--left', 600); /* loop the elements */
+    if (getCustomProperty(ground, '--left') <= -100) {
+      incrementCustomProperty(ground, '--left', 200); /* loop the elements */
     }
   });
 }

@@ -1,8 +1,20 @@
 const options = ['stone', 'scissors', 'paper'];
+const elementCompBtn = document.getElementById('comp__button');
 
 function computerChoice() {
   const randomIndex = Math.floor(Math.random() * options.length);
-  return options[randomIndex];
+  const compChoice = options[randomIndex];
+  if (compChoice === 'stone') {
+    elementCompBtn.innerHTML = '<img src="./img/rsp/stone.png"/>';
+  } else if (compChoice === 'scissors') {
+    elementCompBtn.innerHTML = '<img src="./img/rsp/scissors.png"/>';
+  } else if (compChoice === 'paper') {
+    elementCompBtn.innerHTML = '<img src="./img/rsp/paper.png"/>';
+  } else {
+    elementCompBtn.innerHTML = '';
+  }
+
+  return compChoice;
 }
 
 let compCounter = 0;
@@ -30,8 +42,6 @@ document.querySelectorAll('.rsp__btn').forEach(button => {
     const compChoice = computerChoice();
     const result = getResult(userChoice, compChoice);
     document.querySelector('.rsp__text').textContent = result;
-    document.querySelector('.srp__comp__btn').textContent =
-      'Варіант комп’ютера: ' + compChoice;
     document.getElementById('counter__comp').textContent =
       'Комп’ютер - ' + compCounter;
     document.getElementById('counter__user').textContent =
