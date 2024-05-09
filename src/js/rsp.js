@@ -1,3 +1,7 @@
+import stonekUrl from "../../assets/stone.svg";
+import scissorskUrl from "../../assets/scissors.svg";
+import paperUrl from "../../assets/paper.svg";
+
 const options = ['stone', 'scissors', 'paper'];
 const elementCompBtn = document.getElementById('comp__button');
 
@@ -5,11 +9,14 @@ function computerChoice() {
   const randomIndex = Math.floor(Math.random() * options.length);
   const compChoice = options[randomIndex];
   if (compChoice === 'stone') {
-    elementCompBtn.innerHTML = '<img src="./img/rsp/stone.png"/>';
+    elementCompBtn.innerHTML = `<img src="${stonekUrl}"/>`;
+    // elementCompBtn.innerHTML = '<img src="./img/rsp/stone.svg"/>';
   } else if (compChoice === 'scissors') {
-    elementCompBtn.innerHTML = '<img src="./img/rsp/scissors.png"/>';
+    elementCompBtn.innerHTML = `<img src="${scissorskUrl}"/>`;
+    // elementCompBtn.innerHTML = '<img src="./img/rsp/scissors.svg"/>';
   } else if (compChoice === 'paper') {
-    elementCompBtn.innerHTML = '<img src="./img/rsp/paper.png"/>';
+    elementCompBtn.innerHTML = `<img src="${paperUrl}"/>`;
+    // elementCompBtn.innerHTML = '<img src="./img/rsp/paper.svg"/>';
   } else {
     elementCompBtn.innerHTML = '';
   }
