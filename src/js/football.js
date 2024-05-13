@@ -16,5 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         ball.style.left = ballX + 'px';
         ball.style.top = ballY + 'px';
+
+
+        
+        ball.classList.add('spin');
+
+        setTimeout(function () {
+            ball.classList.remove('spin');
+        }, 1000);
     });
 });
