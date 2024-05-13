@@ -1,3 +1,10 @@
+import ground from "../../assets/dinosaur/ground.png";
+import dinoStationary from "../../assets/dinosaur/dino-stationary.png";
+import dinoRun0 from "../../assets/dinosaur/dino-run-0.png";
+import dinoRun1 from "../../assets/dinosaur/dino-run-1.png";
+import dinoLose from "../../assets/dinosaur/dino-lose.png";
+import cactus from "../../assets/dinosaur/cactus.png";
+
 const SPEED_SCALE = 0.00001;
 
 const game = document.querySelector('#game');
@@ -164,18 +171,20 @@ function getDinoRect() {
 }
 
 function setDinoLose() {
-  dino.src = '../img/dino/dino-lose.png';
+  dino.src = dinoLose;
+  // dino.src = '../img/dino/dino-lose.png';
 }
 
 function handleRun(delta, speedScale) {
   if (isJumping) {
-    dino.src = `../img/dino/dino-stationary.png`;
+    dino.src = dinoStationary;
+    // dino.src = `../img/dino/dino-stationary.png`;
     return;
   }
 
   if (currentFrameTime >= FRAME_TIME) {
     dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT;
-    dino.src = `../img/dino/dino-run-${dinoFrame}.png`; /* switch between images to simulate movement */
+    dino.src = `/img/dino/dino-run-${dinoFrame}.png`; /* switch between images to simulate movement */
     currentFrameTime -= FRAME_TIME;
   }
   currentFrameTime += delta * speedScale;
@@ -244,7 +253,8 @@ function getCactusRects() {
 
 function createCactus() {
   const cactus = document.createElement('img');
-  cactus.src = '../img/dino/cactus.png';
+  cactus.src = cactus;
+  // cactus.src = '../img/dino/cactus.png';
   cactus.classList.add('cactus');
   setCustomProperty(cactus, '--left', 100);
   game.append(cactus);
