@@ -10,7 +10,7 @@
 
   cursor: pointer;
 
-  border-radius: 37px;
+  border-radius: 20px;
   border: 2px solid var(--secondary-color);
   background-color: #5abb58;
   background-image: url(/img/football-field.png);
@@ -22,9 +22,13 @@
 }
 
 .football__ball {
+  width: 40px;
+  height: 40px;
+
   position: absolute;
-  left: 30%;
-  top: 50%;
+  top: 185px;
+  left: 300px;
+
   transition: top 0.5s ease-out, left 0.5s ease-out;
 }
 

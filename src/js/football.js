@@ -18,11 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
         ball.style.top = ballY + 'px';
 
 
-        
-        ball.classList.add('spin');
+    ball.classList.add('spin');
 
-        setTimeout(function () {
-            ball.classList.remove('spin');
-        }, 1000);
+    setTimeout(function () {
+        ball.classList.remove('spin');
+    }, 1000);
     });
 });
