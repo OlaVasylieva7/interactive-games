@@ -10,7 +10,6 @@ function onIconClick() {
 
     if (document.body.classList.contains("dark-theme")) {
         icon.src = darkUrl;
-        icon.style.animation
     } else {
         icon.src = lightkUrl;
     }

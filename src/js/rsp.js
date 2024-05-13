@@ -10,13 +10,10 @@ function computerChoice() {
   const compChoice = options[randomIndex];
   if (compChoice === 'stone') {
     elementCompBtn.innerHTML = `<img src="${stonekUrl}"/>`;
-    // elementCompBtn.innerHTML = '<img src="./img/rsp/stone.svg"/>';
   } else if (compChoice === 'scissors') {
     elementCompBtn.innerHTML = `<img src="${scissorskUrl}"/>`;
-    // elementCompBtn.innerHTML = '<img src="./img/rsp/scissors.svg"/>';
   } else if (compChoice === 'paper') {
     elementCompBtn.innerHTML = `<img src="${paperUrl}"/>`;
-    // elementCompBtn.innerHTML = '<img src="./img/rsp/paper.svg"/>';
   } else {
     elementCompBtn.innerHTML = '';
   }
