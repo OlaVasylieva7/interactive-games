@@ -1,6 +1,6 @@
 .football__container {
-  width: 720px;
-  height: 220px;
+  width: 640px;
+  height: 406px;
 
   margin-right: auto;
   margin-left: auto;
@@ -11,8 +11,9 @@
   cursor: pointer;
 
   border-radius: 37px;
-  border: 2px solid #000;
+  border: 2px solid var(--secondary-color);
   background-color: #5abb58;
+  background-image: url(/img/football-field.png);
 }
 
 .football__field {
