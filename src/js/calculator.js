@@ -35,5 +35,6 @@ const buttonResult = document.getElementById('button-result');
 buttonResult.addEventListener('click', function () {
     const resultValue = document.getElementById('calculator-result');
     const result = calculateResult();
+    
     resultValue.innerText = result;
 });

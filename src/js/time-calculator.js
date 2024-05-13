@@ -6,6 +6,7 @@ btnTCResult.addEventListener('click', function () {
   const minutes = parseInt(inputTC.value || 0);
   const result = convert(minutes);
   const resultConvert = `${result.days} дн. ${result.hours}:${result.minutes}`;
+  
   resultFieldTC.innerText = resultConvert;
 })
 
