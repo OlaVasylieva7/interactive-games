@@ -125,6 +125,10 @@
   margin-left: 51px;
 }
 
+#user__name {
+  margin-left: 3px;
+}
+
 .switch-theme {
   cursor: pointer;
 }

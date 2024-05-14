@@ -1,17 +1,4 @@
-body.show-modal .backdrop {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-}
-
-body.show-modal .modal {
-  transform: scale(1);
-}
-
 .backdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,6 +14,12 @@ body.show-modal .modal {
   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 }
 
+.backdrop.show-modal {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
 .modal {
   padding: 46px 41px;
   border-radius: 20px;
@@ -40,7 +33,10 @@ body.show-modal .modal {
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
 
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal__text {
