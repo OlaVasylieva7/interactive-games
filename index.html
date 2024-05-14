@@ -25,10 +25,10 @@
 
     
     <script type="module" crossorigin src="/interactive-games/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-2db0b1f5.css">
+    <link rel="stylesheet" href="/interactive-games/assets/index-b4bde177.css">
   </head>
   <body>
-    <div class="backdrop js-backdrop">
+    <div class="backdrop js-backdrop show-modal" data-modal>
   <div class="modal">
     <p class="modal__text backdown">
       Привіт! <br />
@@ -40,8 +40,13 @@
     <div class="modal__subcontainer">
       <p class="modal__text">Введіть своє ім’я:</p>
 
-      <input type="text" class="modal__input" placeholder="Ваше ім’я..." />
-      <button class="modal__save-btn">Зберегти</button>
+      <form
+        action="
+      "
+      >
+        <input type="text" class="modal__input" placeholder="Ваше ім’я..." />
+        <button type="submit" class="modal__save-btn">Зберегти</button>
+      </form>
     </div>
 
     <ul class="modal__list">
@@ -67,7 +72,7 @@
       </li>
     </ul>
 
-    <button type="button" class="modal__btn-close" data-action="close-modal">
+    <button type="button" class="modal__btn-close" data-modal-close>
       <img class="modal__btn-icon" src="/interactive-games/assets/cross-37faabd5.svg" alt="" />
     </button>
   </div>
@@ -153,7 +158,7 @@
         id="icon"
       />
 
-      <p class="greeting">Вітаємо, <span id="user__name">User</span>!</p>
+      <p class="greeting">Вітаємо,<span id="user__name">User</span>!</p>
     </div>
   </nav>
 </header>
