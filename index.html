@@ -25,10 +25,10 @@
 
     
     <script type="module" crossorigin src="/interactive-games/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-b4bde177.css">
+    <link rel="stylesheet" href="/interactive-games/assets/index-3c13e63b.css">
   </head>
   <body>
-    <div class="backdrop js-backdrop show-modal" data-modal>
+    <div class="backdrop show-modal" data-modal>
   <div class="modal">
     <p class="modal__text backdown">
       Привіт! <br />
@@ -40,10 +40,7 @@
     <div class="modal__subcontainer">
       <p class="modal__text">Введіть своє ім’я:</p>
 
-      <form
-        action="
-      "
-      >
+      <form>
         <input type="text" class="modal__input" placeholder="Ваше ім’я..." />
         <button type="submit" class="modal__save-btn">Зберегти</button>
       </form>
@@ -78,7 +75,7 @@
   </div>
 </div>
 
-    <div class="backdrop js-backdrop">
+    <div class="backdrop" data-thanks-modal>
   <div class="thanks__modal">
     <p class="thanks__title">Дякую за підписку!</p>
     <ul class="modal__list">
@@ -103,7 +100,7 @@
         />
       </li>
     </ul>
-    <button type="button" class="modal__btn-close" data-action="close-modal">
+    <button type="button" class="modal__btn-close" data-close-thanks-modal>
       <img class="modal__btn-icon" src="/interactive-games/assets/cross-37faabd5.svg" alt="" />
     </button>
   </div>
@@ -530,9 +527,7 @@
         class="footer__input"
         placeholder="Ваша ел. адреса..."
       />
-      <button class="footer__btn" data-action="open-thanks-modal">
-        Підписатись
-      </button>
+      <button class="footer__btn" data-open-thanks-modal>Підписатись</button>
       <p class="footer__subtitle">
         *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
       </p>
