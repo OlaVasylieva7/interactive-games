@@ -13,4 +13,5 @@ import './js/football';
 import './js/enter-numbers';
 import './js/our-team';
 import './js/scientists';
-import './js/noscroll';
+import './js/onscroll';
+import './js/thanks-modal';
