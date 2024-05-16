@@ -6,7 +6,8 @@ const scientists = [
         born: 1879,
         dead: 1955,
         id: 1,
-        url: "/img/scientists/albert-einstein.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/albert-einstein.jpg?raw=true",
+        // url: "/img/scientists/albert-einstein.jpg",
         alt: "Albert Einstein",
     },
     {
@@ -15,7 +16,8 @@ const scientists = [
         born: 1643,
         dead: 1727,
         id: 2,
-        url: "/img/scientists/isaac-newton.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/isaac-newton.jpg?raw=true",
+        // url: "/img/scientists/isaac-newton.jpg",
         alt: "Isaac Newton",
     },
     {
@@ -24,7 +26,8 @@ const scientists = [
         born: 1564,
         dead: 1642,
         id: 3,
-        url: "/img/scientists/galileo-galilei.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/galileo-galilei.jpg?raw=true",
+        // url: "/img/scientists/galileo-galilei.jpg",
         alt: "Galileo Galilei",
     },
     {
@@ -33,7 +36,8 @@ const scientists = [
         born: 1867,
         dead: 1934,
         id: 4,
-        url: "/img/scientists/marie-curie.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/marie-curie.jpg?raw=true",
+        // url: "/img/scientists/marie-curie.jpg",
         alt: "Marie Curie",
     },
     {
@@ -42,7 +46,8 @@ const scientists = [
         born: 1571,
         dead: 1630,
         id: 5,
-        url: "/img/scientists/johannes-kepler.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/johannes-kepler.jpg?raw=true",
+        // url: "/img/scientists/johannes-kepler.jpg",
         alt: "Johannes Kepler",
     },
     {
@@ -51,7 +56,8 @@ const scientists = [
         born: 1473,
         dead: 1543,
         id: 6,
-        url: "/img/scientists/nicolau-copernicus.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/nicolau-copernicus.jpg?raw=true",
+        // url: "/img/scientists/nicolau-copernicus.jpg",
         alt: "Nicolaus Copernicus",
     },
     {
@@ -60,7 +66,8 @@ const scientists = [
         born: 1858,
         dead: 1947,
         id: 7,
-        url: "/img/scientists/max-planck.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/max-planck.jpg?raw=true",
+        // url: "/img/scientists/max-planck.jpg",
         alt: "Max Planck",
     },
     {
@@ -69,7 +76,8 @@ const scientists = [
         born: 1898,
         dead: 1979,
         id: 8,
-        url: "/img/scientists/katherine-blodgett.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/katherine-blodgett.jpg?raw=true",
+        // url: "/img/scientists/katherine-blodgett.jpg",
         alt: "Katherine Blodgett",
     },
     {
@@ -78,7 +86,8 @@ const scientists = [
         born: 1815,
         dead: 1852,
         id: 9,
-        url: "/img/scientists/ada-lovelace.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/ada-lovelace.jpg?raw=true",
+        // url: "/img/scientists/ada-lovelace.jpg",
         alt: "Ada Lovelace",
     },
     {
@@ -87,7 +96,8 @@ const scientists = [
         born: 1855,
         dead: 1905,
         id: 10,
-        url: "/img/scientists/sarah-goode.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/sarah-goode.jpg?raw=true",
+        // url: "/img/scientists/sarah-goode.jpg",
         alt: "Sarah E. Goode",
     },
     {
@@ -96,7 +106,8 @@ const scientists = [
         born: 1878,
         dead: 1968,
         id: 11,
-        url: "/img/scientists/lise-meitner.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/lise-meitner.jpg?raw=true",
+        // url: "/img/scientists/lise-meitner.jpg",
         alt: "Lise Meitner",
     },
     {
@@ -105,7 +116,8 @@ const scientists = [
         born: 1829,
         dead: 1909,
         id: 12,
-        url: "/img/scientists/hanna-hammarström.jpg",
+        url: "https://github.com/OlaVasylieva7/interactive-games/blob/main/src/img/scientists/hanna-hammarstr%C3%B6m.jpg?raw=true",
+        // url: "/img/scientists/hanna-hammarström.jpg",
         alt: "Hanna Hammarström",
     },
 ];
