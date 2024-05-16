@@ -4,21 +4,17 @@ const closeThanksModal = document.querySelector('[data-close-thanks-modal]');
 
 openThanksModal.addEventListener("click", onOpenThanksModal);
 closeThanksModal.addEventListener("click", onCloseThanksModal);
-window.addEventListener('click', onBackdrop);
+window.addEventListener('keydown', onBackdropOrEscape);
+window.addEventListener('click', onBackdropOrEscape);
 
 function onOpenThanksModal() {
     thanksModal.classList.add("show-modal");
-    window.addEventListener('keydown', onEscape);
 }
 
 function onCloseThanksModal() {
     thanksModal.classList.remove("show-modal");
 }
 
-function onEscape(e) {
-    if (e.code === "Escape") onCloseThanksModal();
-}
-
-function onBackdrop(e) {
-    if (e.target === thanksModal) onCloseThanksModal();
+function onBackdropOrEscape(e) {
+    if (e.target === thanksModal || e.code === "Escape") thanksModal.classList.remove("show-modal");
 }
