@@ -79,7 +79,7 @@ function checkGameOver() {
 function handleGameOver() {
   setDinoLose();
   setTimeout(() => {
-    document.addEventListener('keydown', startGame, {
+    buttonStartGame.addEventListener('click', startGame, {
       once: true,
     }); /* prevents accidental click */
     gameoverMessage.classList.remove('hide');
